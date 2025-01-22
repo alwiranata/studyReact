@@ -1,6 +1,7 @@
 import Welcome from "./components/Welcome"
 import Header from "./components/Header"
 import ProfileCard from "./components/ProfileCard"
+import Counter from "./components/Counter"
 
 type Teacher ={
   name :string
@@ -32,11 +33,15 @@ const teachers  : Teacher[] =[
 
 function App() {
   return (
-    <>
+    <div
+    style={{
+      padding : "flex",
+      gap : "16px"
+    }}
+    >
       <Header/>
-      <h1> Hello World</h1>
-
-      <div style={{margin: "10px", display: "flex", gap: "8px"}}>
+     <Counter/>
+      {/* <div style={{margin: "10px", display: "flex", gap: "8px"}}>
       {
         teachers.map((teacher) =>{
           return(
@@ -50,9 +55,9 @@ function App() {
         })
       }
        
-      </div>
+      </div> */}
       <Welcome/>
-    </>
+    </div>
   )
 }
 
