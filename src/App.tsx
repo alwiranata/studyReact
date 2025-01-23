@@ -2,6 +2,11 @@ import Welcome from "./components/Welcome"
 import Header from "./components/Header"
 import ProfileCard from "./components/ProfileCard"
 import Counter from "./components/Counter"
+import { Routes,Route } from "react-router"
+import TermsPage from "./pages/TermsPage"
+import HomePage from "./pages/HomePage"
+import NotFoundPage from "./pages/NotFoundPage"
+
 
 type Teacher ={
   name :string
@@ -31,33 +36,15 @@ const teachers  : Teacher[] =[
   }
 ]
 
+
+//component
 function App() {
   return (
-    <div
-    style={{
-      padding : "flex",
-      gap : "16px"
-    }}
-    >
-      <Header/>
-     <Counter/>
-      {/* <div style={{margin: "10px", display: "flex", gap: "8px"}}>
-      {
-        teachers.map((teacher) =>{
-          return(
-            <ProfileCard 
-            name={teacher.name} 
-            job={teacher.job} 
-            year={teacher.year}
-            key = {teacher.id}
-            />
-          )
-        })
-      }
-       
-      </div> */}
-      <Welcome/>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/terms"  element={<TermsPage/>}/>
+      <Route path="*"  element={<NotFoundPage/>}></Route>
+    </Routes>
   )
 }
 
