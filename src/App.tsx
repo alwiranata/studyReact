@@ -7,6 +7,7 @@ import TermsPage from "./pages/TermsPage"
 import HomePage from "./pages/HomePage"
 import NotFoundPage from "./pages/NotFoundPage"
 import ProductDetailPages from "./pages/ProductDetailPages"
+import ProductListPage from "./pages/ProductListPage"
 
 
 type Teacher ={
@@ -44,6 +45,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/terms"  element={<TermsPage/>}/>
+      <Route path="/product-list" element={<ProductListPage/>}/>
       <Route path="/product/:productSlug" element={<ProductDetailPages/>}/>
       <Route path="*"  element={<NotFoundPage/>}></Route>
     </Routes>
