@@ -1,13 +1,10 @@
-import Welcome from "./components/Welcome"
-import Header from "./components/Header"
-import ProfileCard from "./components/ProfileCard"
-import Counter from "./components/Counter"
 import { Routes,Route } from "react-router"
 import TermsPage from "./pages/TermsPage"
 import HomePage from "./pages/HomePage"
 import NotFoundPage from "./pages/NotFoundPage"
 import ProductDetailPages from "./pages/ProductDetailPages"
 import ProductListPage from "./pages/ProductListPage"
+import FormPage from "./pages/FormPage"
 
 
 type Teacher ={
@@ -47,7 +44,8 @@ function App() {
       <Route path="/terms"  element={<TermsPage/>}/>
       <Route path="/product-list" element={<ProductListPage/>}/>
       <Route path="/product/:productSlug" element={<ProductDetailPages/>}/>
-      <Route path="*"  element={<NotFoundPage/>}></Route>
+      <Route path="/form" element={<FormPage/>}/>
+      <Route path="*"  element={<NotFoundPage/>}/>
     </Routes>
   )
 }

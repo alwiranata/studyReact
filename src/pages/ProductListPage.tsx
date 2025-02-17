@@ -24,7 +24,7 @@ const ProductListPage = () =>{
                 </li>
                 <li>
                 Etalase :{params.get("etalase")}
-                </li>para
+                </li>
             </ul>
             
            <button style={{display :"inline-block", marginRight:"10px"}} onClick={handleGetEtalase}>Change params Etalase</button>
