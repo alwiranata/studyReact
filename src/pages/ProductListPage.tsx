@@ -14,7 +14,6 @@ const ProductListPage = () =>{
         getParams(params)
     }
     
-
     return(
         <div>
             <h1>Product List Page</h1>
