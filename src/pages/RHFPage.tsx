@@ -18,7 +18,7 @@ const RHFPage = () => {
 
   const form = useForm<registerFormSchema>({
     resolver: zodResolver(RegisterFromValidation)
-  });
+  });  
 
   const handleRegisterUser = (data: registerFormSchema) => {
     alert("forms Submited");
