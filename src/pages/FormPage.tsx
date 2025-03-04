@@ -2,8 +2,6 @@ import { useRef } from "react"
 import { useState } from "react"
 const FormPage = () => {
 
-    const inputRef = useRef<HTMLInputElement>(null)
-    const inputEmailRef = useRef<HTMLInputElement>(null)
 
 
     const [username, setUsername] = useState("")

@@ -1,0 +1,22 @@
+{
+    "employes" : [
+        {
+            "id" : 1,
+            "name" : "Aldo Wiranata"
+        },
+        {
+            "id" : 2,
+            "name" : "Awi"
+        },
+        {
+            "id" : 3,
+            "name" : "Farel Chandra"
+        },
+        {
+            "id" : 4,
+            "name" : "Ira"
+        }
+    ],
+    "products " : [],
+    "todos" : []
+}

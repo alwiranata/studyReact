@@ -9,34 +9,6 @@ import RHFPage from "./pages/RHFPage"
 import EmployePage from "./pages/EmployePage"
 
 
-type Teacher ={
-  name :string
-  job : string
-  year : number
-  id: number
-}
-
-const teachers  : Teacher[] =[
-  {
-    name : "Aldo",
-    job : "Programer",
-    year : 2006,
-    id : 1,
-  },
-  {
-    name : "Wiranata",
-    job : "President",
-    year : 2006,
-    id : 2,
-  },
-  {
-    name : "MY",
-    job : "collage",
-    year : 2006,
-    id : 3,
-  }
-]
-
 
 //component
 function App() {
